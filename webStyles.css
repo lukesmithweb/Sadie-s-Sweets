@@ -331,4 +331,13 @@ tr td:first-child {
 	.contact-information {
 		width: 90vw;
 	}
+
+	.img-div p {
+		opacity: 1;
+	}
+	.img-div:hover { 
+		& > img {
+			opacity: 1;
+		}
+	}
 }
