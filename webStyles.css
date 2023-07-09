@@ -42,15 +42,36 @@ nav a:hover {
 	/* border-bottom-color: yellow; */
 }
 
-.main-content {
-	background: hotpink;
+.footer-content p {
+	background: white;
+	text-align: center;
+	font-size: 0.8rem;
+}
+
+.rights {
+	padding-bottom: 1rem;
+}
+
+.footer-content h1 {
+	background: white;
+	border-top: 2px solid black;
+	text-align: center;
+	font-size: 1rem;
+	padding-top: 0.5rem;
+}
+
+.footer-content {
+	display: grid;
+	width: 100%;
+	height: auto;
 }
 
 .main-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	height: 95vh;
+	height: 100vh;
 	padding: 0rem calc((100vw - 1300px) / 2);
+	background: hotpink;
 }
 
 .column-left {
@@ -101,6 +122,8 @@ button:hover {
 .donut-image {
 	width: 100%;
 	height: auto;
+	max-height: 40rem;
+	background: transparent;
 }
 
 .contact-page {
@@ -121,7 +144,8 @@ button:hover {
 	border: none;
 	text-align: center;
 	background: white;
-	border-radius: 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 tr td {
@@ -162,16 +186,18 @@ tr td:first-child {
 	width: 60vw;
 	height: 3rem;
 	background: white;
-	border-radius: 10px;
+	border-radius: 5px;
 	border: none;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .contact-form textarea {
 	width: 60vw;
 	height: 6rem;
 	background: white;
-	border-radius: 10px;
+	border-radius: 5px;
 	border: none;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .contact-form label {
@@ -203,12 +229,11 @@ tr td:first-child {
 .gallery-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	height: 95vh;
 	padding: 0rem calc((100vw - 1300px) / 2);
 }
 
 .gallery-container img {
-	padding: 2rem;
+	padding: 0rem;
 	max-width: 500px;
 	height: auto;
 	width: 100%;
@@ -219,6 +244,13 @@ tr td:first-child {
 	cursor: pointer;
 	color: white;
 	font-size: 0.5rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	margin-top: 2rem;
+}
+
+.img-div img {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .img-div:hover { 
@@ -284,7 +316,9 @@ tr td:first-child {
 	}
 	
 	.main-container {
-		grid-template-columns: 1fr;
+		/* grid-template-columns: 1fr; */
+		display: block;
+		margin-top: 2rem;
 	}
 	
 	.main-content h1 {
@@ -305,6 +339,12 @@ tr td:first-child {
 		cursor: pointer;
 		border-radius: 50px;
 		box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	}
+	
+	.donut-image {
+		width: 100%;
+		max-width: 60vw;
+		height: auto;
 	}
 	
 	.gallery-container {
@@ -331,7 +371,7 @@ tr td:first-child {
 	.contact-information {
 		width: 90vw;
 	}
-
+	
 	.img-div p {
 		opacity: 1;
 	}
